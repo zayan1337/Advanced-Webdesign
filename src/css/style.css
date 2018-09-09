@@ -1,28 +1,28 @@
 
-/* * {
+ * {
     box-sizing: border-box;
     margin: 0;
     user-select: none;
   }
-   */
-  /* body {
+  
+  body {
     background-color: gray; 
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(wood-background.jpg);
+    background-image: url(../images/wood-background.jpg);
     background-size: cover; 
-  } */
+  } 
   
-/* 
+
 .tools {
   background-color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-} */
+} 
 
 
 .grid-container {
@@ -30,7 +30,7 @@
   height: 1000px;
   grid-template-columns: 0.3fr 2.4fr 0.3fr;
   grid-template-rows: 0.4fr 0.3fr 3.6fr 0.3fr 0.4fr;
-  background-image: url(wood-background.jpg);
+  background-image: url(../images/wood-background.jpg);
   background-size: cover; 
 }
 
