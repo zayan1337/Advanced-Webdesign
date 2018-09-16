@@ -1,50 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
-
 <head>
-	<meta charset="UTF-8">
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+  <meta charset="UTF-8">
 	<title>Canvas Drawing App</title>
-    <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-
-    <div class="grid-container">
-        <div id="images"></div>
-        <div id="colours">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush">
-            <img src="images/paint-brush.JPG" class="paint-brush"> 
-        </div>
-        <canvas id="canvas"></canvas>
-        <div id="left-toolbar" class="tools"></div>
-        <div id="right-toolbar" class="tools"></div>
+	
+  <div id="app">
+    
+      <div class="space1"></div>
+      <div id="shapes" class="toolbar3">
+      <img src="images/black.png" class="active" />
+      <img src="images/red.png" onclick="selectImage(this);"  />
+      <img src="images/blue.png"/>
+      <img src="images/cyan.png"/>
+      <img src="images/yellow.png"/>
+      <img src="images/green.png"/>
+      <img src="images/magenta.png"/>
+     
+      </div>
+      <div class="space2"></div>  
+      <div id="tools" class="toolbar">
+        <img src="images/small.png" data-mode="draw" data-size="5" class="active" />
+        <img src="images/medium.png" data-mode="draw" data-size="10" />
+        <img src="images/large.png" data-mode="draw" data-size="20" />
+        
+        
     </div>
-
+    <canvas id="canvas" width="700" height="400"></canvas>
+    <div id="tools" class="toolbar">
+        
+        <img src="images/eraser.png" data-mode="erase" data-size="10" />
+        <img src="images/undo.png" data-action="undo" class="disabled" />
+        <img src="images/delete.png" data-action="delete" />
+        <img src="images/undo.png" data-action="undo" class="disabled" />
+        
+      
+    </div>
+      <div class="space3"></div>
+      <div id="colors" class="toolbar2">
+        <img src="images/paint-brush.jpg" class="active" />
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        <img src="images/paint-brush.jpg"/>
+        
+      </div>
+      <div class="space4"></div>
   
-    <script type="text/javascript" src="js/canvas.js"></script>
+    </div>
+  
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
-
-
-<!-- FONT AWESOME ICONS TO MAYBE USE-->
-
-<!-- 
-    paint-roller: <i class="fas fa-paint-roller"></i>
-    paint-brush: <i class="fas fa-paint-brush"></i>
-    trash-can: <i class="fas fa-trash"></i>
-    tick: <i class="fas fa-check-circle"></i>
-    cross: <i class="fas fa-times-circle"></i>
--->
